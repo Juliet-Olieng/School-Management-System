@@ -14,7 +14,8 @@ class Homepage : AppCompatActivity() {
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
         val summary= SummaryFragment()
-        val school=School()
+        val school= SchoolFragment()
+        val camps=CampsFragment()
 
         setCurrentFragment(summary)
 
@@ -22,6 +23,7 @@ class Homepage : AppCompatActivity() {
             when (it.itemId) {
                 R.id.summary-> setCurrentFragment(summary)
                 R.id.school->setCurrentFragment(school)
+                R.id.camp-> setCurrentFragment(camps)
 
             }
             true

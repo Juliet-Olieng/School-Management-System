@@ -4,11 +4,17 @@
         android:id="@+id/summary"
         android:title="@string/summary"
         android:icon="@drawable/baseline_summarize_24"
-        android:enabled="true"/>
+        android:enabled="true"
+        />
     <item
         android:id="@+id/school"
         android:title="@string/school"
         android:icon="@drawable/baseline_school_24"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/camp"
+        android:title="@string/school"
+        android:icon="@drawable/camp"
         android:enabled="true"/>
 
 

@@ -14,39 +14,46 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/tvSchoolName"
+            android:id="@+id/tvCampName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="School Name"
+            android:text="Camp Name"
             android:textSize="18sp"
             android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="startDate"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/tvCurriculum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Curriculum"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+        <TextView
+            android:id="@+id/tvOrgId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="organization Id"
+            android:textSize="14sp"
+            android:textColor="#666666" />
         <TextView
             android:id="@+id/tvSchoolId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="school Id"
-            android:textSize="14sp"
-            android:textColor="#666666" />
-        <TextView
-            android:id="@+id/tvCreatedAt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="createdAt"
-            android:textSize="14sp"
-            android:textColor="#666666" />
-
-        <TextView
-            android:id="@+id/tvCountry"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="country Name"
-            android:textSize="14sp"
-            android:textColor="#666666" />
-        <TextView
-            android:id="@+id/tvOrgName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="organization"
             android:textSize="14sp"
             android:textColor="#666666" />
 
