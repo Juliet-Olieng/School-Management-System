@@ -8,8 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.olieng.school_management.R
-import com.olieng.school_management.data.CampsData
-import com.olieng.school_management.ui.CampDetailFragment
+import com.olieng.school_management.model.CampsData
 
 
 class CampsFragment : Fragment() {

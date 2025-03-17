@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvCardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
@@ -20,35 +21,38 @@
             android:text="School Name"
             android:textSize="18sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tvSchoolId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="school Id"
-            android:textSize="14sp"
-            android:textColor="#666666" />
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
         <TextView
             android:id="@+id/tvCreatedAt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="createdAt"
-            android:textSize="14sp"
-            android:textColor="#666666" />
+            android:textColor="#666666"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvCountry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="country Name"
-            android:textSize="14sp"
-            android:textColor="#666666" />
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
         <TextView
             android:id="@+id/tvOrgName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="organization"
-            android:textSize="14sp"
-            android:textColor="#666666" />
+            android:textColor="#666666"
+            android:textSize="14sp" />
 
     </LinearLayout>
 

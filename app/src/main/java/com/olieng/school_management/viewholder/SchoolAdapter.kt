@@ -1,19 +1,19 @@
 package com.olieng.school_management.viewholder
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.olieng.school_management.R
-import com.olieng.school_management.data.SchoolData
+import com.olieng.school_management.model.SchoolData
+import com.olieng.school_management.databinding.SchoolListBinding
 
 
-class SchoolAdapter(private val schoolList: List<SchoolData>) : RecyclerView.Adapter<SchoolViewHolder>() {
+class SchoolAdapter(private val schoolList: List<SchoolData>, private val context: Context) : RecyclerView.Adapter<SchoolViewHolder>() {
 
-    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): SchoolViewHolder {
-        val v = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.school_list, viewGroup, false)
-        return SchoolViewHolder(v)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SchoolViewHolder {
+        val binding =SchoolListBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        return SchoolViewHolder(binding)
     }
 
     override fun getItemCount(): Int =
@@ -21,8 +21,20 @@ class SchoolAdapter(private val schoolList: List<SchoolData>) : RecyclerView.Ada
 
 
     override fun onBindViewHolder(holder: SchoolViewHolder, position: Int) {
-        val school = schoolList[position]
-        holder.bind(school)
+        val currentSchool = schoolList[position]
+        val binding = holder.binding
+
+        binding.tvSchoolId.text= currentSchool.schoolId.toString()
+        binding.tvSchoolName.text= currentSchool.name
+        binding.tvCreatedAt.text=currentSchool.createdAt
+        binding.tvCountry.text= currentSchool.country
+        binding.tvOrgName.text= currentSchool.organizationName
+
+//        binding.tvCardView.setOnClickListener {
+//            val intent=Intent(context, )
+//        }
+
     }
 
 }
+class SchoolViewHolder(var binding: SchoolListBinding): RecyclerView.ViewHolder(binding.root){}

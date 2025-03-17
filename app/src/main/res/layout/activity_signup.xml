@@ -4,18 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".ui.SignUp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="SIGN UP"
+        android:textSize="50dp"
+        android:textColor="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TILFirstName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="132dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etFirstname"
+            android:textSize="25dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="input first name" />
@@ -34,6 +49,7 @@
             android:id="@+id/etLastName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textSize="25dp"
             android:hint="input Last Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,6 +65,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
+            android:textSize="25dp"
             android:layout_height="50dp"
             android:hint="Input email" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -66,33 +83,21 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textSize="25dp"
             android:hint="Input password" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TIConfirmPassword"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TIPassword">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etConfirmPassword"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Confirm password" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:textSize="30dp"
         android:text="Sign UP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TIConfirmPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/TIPassword" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

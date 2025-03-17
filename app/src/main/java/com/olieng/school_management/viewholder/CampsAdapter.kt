@@ -4,7 +4,7 @@
 //import android.view.ViewGroup
 //import androidx.recyclerview.widget.RecyclerView
 //import com.olieng.school_management.R
-//import com.olieng.school_management.data.CampsData
+//import com.olieng.school_management.model.CampsData
 //
 //
 //class CampsAdapter(
@@ -32,7 +32,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.olieng.school_management.R
-import com.olieng.school_management.data.CampsData
+import com.olieng.school_management.model.CampsData
 import com.olieng.school_management.viewholder.CampsViewHolder
 
 class CampsAdapter(

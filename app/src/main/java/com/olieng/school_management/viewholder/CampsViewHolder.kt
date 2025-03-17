@@ -4,7 +4,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.olieng.school_management.R
-import com.olieng.school_management.data.CampsData
+import com.olieng.school_management.model.CampsData
 
 
 class CampsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -25,4 +25,4 @@ class CampsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         organizationId.text = campsData.organizationId.toString()
     }
 
-    }
+}

@@ -1,6 +1,8 @@
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("kotlin-kapt")
 }
 
 android {
@@ -63,6 +65,8 @@ dependencies {
     implementation ("com.squareup.picasso:picasso:2.8")
     implementation ("androidx.cardview:cardview:1.0.0")
     implementation ("androidx.recyclerview:recyclerview:1.4.0")
+    kapt ("androidx.room:room-compiler:2.6.1")
+    implementation ("com.google.code.gson:gson:2.10.1")
 }
 
 

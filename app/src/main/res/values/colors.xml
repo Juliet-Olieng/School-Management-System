@@ -9,6 +9,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="grey">#aaa</color>
     <color name="button_color">#1E573B</color>
-    <color name="yellow">#FFEB3B</color>
+    <color name="orange">##FFA500</color>
     <color name="red">#F44336</color>
 </resources>
